@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/pet-shop-page/static/css/main.38a0456b.css",
+    "main.js": "/pet-shop-page/static/js/main.31cf85ae.js",
+    "static/js/787.4e6c614e.chunk.js": "/pet-shop-page/static/js/787.4e6c614e.chunk.js",
+    "static/media/blog1.svg": "/pet-shop-page/static/media/blog1.a3fcd5dc1c417fd25ebe36b1865faacc.svg",
+    "static/media/dog3.svg": "/pet-shop-page/static/media/dog3.57f0a29d5014804d5d863eb2acb51645.svg",
+    "static/media/header-fundo.svg": "/pet-shop-page/static/media/header-fundo.7f9db13f7373866e9c13.svg",
+    "static/media/blog3.svg": "/pet-shop-page/static/media/blog3.715497140ca3b639e58c0f22a331d45b.svg",
+    "static/media/blog2.svg": "/pet-shop-page/static/media/blog2.9fa302dddebc1ac01f2c07429ae59d9b.svg",
+    "static/media/dog1.svg": "/pet-shop-page/static/media/dog1.98d2fc039cf42e5b034f1636acfc5c9a.svg",
+    "static/media/insta3.svg": "/pet-shop-page/static/media/insta3.a10cec3022c4ae9cc9f221f843f15eba.svg",
+    "static/media/blog4.svg": "/pet-shop-page/static/media/blog4.7312fc724b31463db408aac168539b04.svg",
+    "static/media/insta2.svg": "/pet-shop-page/static/media/insta2.db06dd92cc1664a71a1dae2879aafe35.svg",
+    "static/media/dog2.svg": "/pet-shop-page/static/media/dog2.b7cdd0d5a1bcfe938179e82c2c2419c7.svg",
+    "static/media/card1.svg": "/pet-shop-page/static/media/card1.440663b783830c2b1933.svg",
+    "static/media/dog4.svg": "/pet-shop-page/static/media/dog4.719d6f122dc76ead18831f3ddc50601a.svg",
+    "static/media/insta1.svg": "/pet-shop-page/static/media/insta1.1d1aae84f3c4d05d59260e53c58a1958.svg",
+    "static/media/card2.svg": "/pet-shop-page/static/media/card2.6379aef27122ecf82e6365ecc608ea2a.svg",
+    "static/media/dogTopo.svg": "/pet-shop-page/static/media/dogTopo.ffaf310702f5cacb4e039b5211e805e8.svg",
+    "static/media/Poppins-Regular.ttf": "/pet-shop-page/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/marca1.svg": "/pet-shop-page/static/media/marca1.608695e36042fde92055791886dce9ef.svg",
+    "static/media/caoselheiro.svg": "/pet-shop-page/static/media/caoselheiro.733e36f218dbdb4b9180d016b370bd4c.svg",
+    "static/media/marca2.svg": "/pet-shop-page/static/media/marca2.f21015a3e901599083ec05e1d4db3027.svg",
+    "static/media/marca3.svg": "/pet-shop-page/static/media/marca3.bc5bdc083f0a25e1df504ab6c279c228.svg",
+    "static/media/caixaProduto.svg": "/pet-shop-page/static/media/caixaProduto.13c2f8f24ffe1e8957ad1783b4df8971.svg",
+    "index.html": "/pet-shop-page/index.html",
+    "main.38a0456b.css.map": "/pet-shop-page/static/css/main.38a0456b.css.map",
+    "main.31cf85ae.js.map": "/pet-shop-page/static/js/main.31cf85ae.js.map",
+    "787.4e6c614e.chunk.js.map": "/pet-shop-page/static/js/787.4e6c614e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38a0456b.css",
+    "static/js/main.31cf85ae.js"
+  ]
+}
