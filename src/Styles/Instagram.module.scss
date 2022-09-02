@@ -1,0 +1,99 @@
+@use 'colors' as *;
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+/* HIDE SCROLLBAR */
+.titulo {
+	display: inline-flex;
+	width: 300px;
+	height: 48px;
+	margin-left: 40px;
+	color: $color4;
+	font-family: 'Poppins', Courier, monospace;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 48px;
+	padding: 14px 16px 13px 21px;
+	margin-bottom: 30px;
+}
+#divSeguir {
+	display: flex;
+	position: absolute;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: right;
+	text-decoration-line: underline;
+	color: $color1;
+	align-items: center;
+	justify-content: flex-end;
+	padding-top: 3%;
+	right: 5%;
+	&:hover {
+		color: $color5;
+	}
+}
+.wrapper {
+	font-family: 'Poppins';
+	font-style: normal;
+}
+#barraInsta {
+	display: inline-flex;
+	margin: 0 -10px;
+	height: 243px;
+	width: 100%;
+	overflow: auto;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	&::-webkit-scrollbar {
+		display: none;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}
+.instaBox {
+	display: flex;
+	text-align: center;
+	padding: 0 28px;
+	width: 178px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $color8;
+	margin-left: 10px;
+	border-radius: 10px;
+}
+#buttonRight {
+	display: flex;
+	position: absolute;
+	margin-top: 240px;
+	background-color: $wt;
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 0.2px solid $color4;
+	right: 1%;
+	&:hover {
+		background-color: $color1;
+	}
+}
+#buttonLeft {
+	display: flex;
+	position: absolute;
+	margin-top: 240px;
+	background-color: $wt;
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 0.2px solid $color4;
+	left: 1%;
+	&:hover {
+		background-color: $color1;
+	}
+}

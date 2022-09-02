@@ -1,0 +1,281 @@
+@use "colors" as *;
+
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+/* subtitulo */
+/* icones de login/carrinho */
+/* select menu bellow navbar */
+.headerBody {
+	width: 100%;
+}
+#header {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 32px;
+}
+#compraSegura {
+	padding: 5px;
+	margin: 0 75px 0 75px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+}
+#freteGratis {
+	padding: 5px;
+	margin: 0 75px 0 75px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+}
+#parceleCompras {
+	padding: 5px;
+	margin: 0 75px 0 75px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+}
+.yellow {
+	color: $color1;
+}
+#title {
+	display: inline-flex;
+	width: 97%;
+	height: 55px;
+	align-items: center;
+	justify-content: space-around;
+	font-family: 'poppins', Courier, monospace;
+	padding: 14px 16px 13px 21px;
+}
+#busca {
+	width: 657px;
+	height: 48px;
+	border: 1px solid $wt;
+	border-radius: 10px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: $color6;
+	margin-right: 0px;
+	input {
+		width: 196px;
+		height: 21px;
+		margin-left: 24px;
+		color: $color3;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 21px;
+		border: 0px;
+		background-color: $color6;
+	}
+}
+#buscaLupa {
+	display: flex;
+	margin-left: auto;
+	padding: 21px;
+	color: $color3;
+	width: 15px;
+	height: 9px;
+	align-items: center;
+	border-radius: 50%;
+	&:hover {
+		background-color: $color1;
+	}
+}
+#icons {
+	display: flex;
+	width: 17%;
+	height: 72px;
+	padding: 0px;
+	align-items: center;
+	justify-content: space-between;
+}
+#heartIcon {
+	&:hover {
+		background-color: $color1;
+	}
+	color: $color3;
+	border-radius: 10%;
+}
+#userIcon {
+	&:hover {
+		background-color: $color1;
+	}
+	color: $color3;
+	border-radius: 10%;
+}
+#cartIcon {
+	&:hover {
+		background-color: $color1;
+	}
+	color: $color3;
+	border-radius: 10%;
+}
+#caixaIcon {
+	&:hover {
+		background-color: $color1;
+	}
+	margin-right: 20px;
+	margin-bottom: 10%;
+	border-radius: 10%;
+}
+#bottom {
+	position: absolute;
+	width: 100%;
+	height: 40px;
+	margin: 0 auto;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 18px;
+	z-index: 1000;
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 2px solid $wt;
+	box-shadow: 0px 8px 16px #b386001f;
+	border-radius: 0px 0px 10px 10px;
+	z-index: 1000;
+	overflow: hidden;
+	padding-bottom: 20px;
+	background-color: $wt;
+}
+ul#navbarMenu {
+	width: 100%;
+	min-width: 696px;
+	li {
+		display: inline-flex;
+		padding: 0px 40px;
+		justify-content: space-between;
+		text-align: center;
+		color: $color3;
+		&:hover {
+			border-bottom: 5px solid #000000;
+		}
+	}
+}
+#select {
+	display: flex;
+	margin-top: 40px;
+	width: 100%;
+	height: 490px;
+	background: url('../Assets/header-fundo.svg') no-repeat;
+	background-size: 100%;
+	background-clip: border-box;
+	z-index: 800;
+}
+#leftSelectIcon {
+	&:hover {
+		background-color: $color1;
+	}
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 60%;
+	position: absolute;
+	left: 5%;
+	top: 65%;
+	color: $wt;
+}
+#rightSelectIcon {
+	&:hover {
+		background-color: $color1;
+	}
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border-radius: 60%;
+	position: absolute;
+	right: 5%;
+	top: 65%;
+	color: $wt;
+}
+#textButtonSelect {
+	position: absolute;
+	left: 10%;
+	top: 35%;
+	color: $wt;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 999;
+	font-size: 40px;
+	line-height: 40px;
+}
+#buttonConfira {
+	box-sizing: border-box;
+	width: 131px;
+	height: 48px;
+	background: $color1;
+	border: 1px solid $color7;
+	border-radius: 10px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: $wt;
+}
+#buttonDown {
+	display: flex;
+	background-color: $wt;
+	position: absolute;
+	bottom: -50px;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 0.2px solid $color2;
+	z-index: 2;
+	&:hover {
+		background-color: $color1;
+	}
+}
+#buttonLeft {
+	&:hover {
+		background-color: $color1;
+	}
+}
+#buttonRight {
+	&:hover {
+		background-color: $color1;
+	}
+}
+#dotsThree {
+	display: flex;
+	position: absolute;
+	bottom: 10px;
+	left: 48.5%;
+	width: 80px;
+	height: 20px;
+	color: $wt;
+	font-weight: 900;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 2;
+}
+#gradient {
+	display: flex;
+	position: absolute;
+	bottom: -30px;
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 98.89%);
+	align-items: center;
+	justify-content: space-between;
+	z-index: 1;
+}

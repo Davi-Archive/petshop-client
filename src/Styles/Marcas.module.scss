@@ -1,0 +1,159 @@
+@use "colors" as *;
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+/* HIDE SCROLLBAR */
+.titulo {
+	width: 300px;
+	height: 48px;
+	margin-left: 40px;
+	color: $color2;
+	font-family: 'Poppins', Courier, monospace;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 48px;
+	padding: 14px 16px 13px 21px;
+	margin-bottom: 30px;
+}
+.wrapper {
+	font-family: 'Poppins';
+	font-style: normal;
+	position: relative;
+}
+#barraMarca {
+	display: inline-flex;
+	margin: 10px 50px;
+	height: 178px;
+	width: 100%;
+	max-width: 1200px;
+	overflow: hidden;
+	scroll-behavior: smooth;
+	&::-webkit-scrollbar {
+		display: none;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}
+.productName {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	color: $color2;
+	width: 253px;
+}
+.marcaBox {
+	display: flex;
+	text-align: center;
+	padding: 0 28px;
+	width: 178px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid $color8;
+	margin-left: 4px;
+	border-radius: 10px;
+}
+.dePreco {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	text-decoration-line: line-through;
+	color: $color3;
+}
+.porPreco {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 27px;
+	text-align: center;
+	color: $color2;
+}
+.assinantePreco {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	color: $color1;
+}
+.paraAssinantes {
+	font-weight: 700;
+	font-size: 10px;
+	line-height: 7px;
+	text-align: center;
+	color: $color2;
+}
+.botaoAdicionar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 220px;
+	height: 48px;
+	margin-left: 5%;
+	margin-top: 5%;
+	background: $color1;
+	border: 1px solid $color7;
+	border-radius: 10px;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: $wt;
+}
+#buttonRight {
+	display: flex;
+	position: absolute;
+	top: 60%;
+	background-color: $wt;
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 0.2px solid $color2;
+	z-index: 2;
+	right: 4%;
+	&:hover {
+		background-color: $color1;
+	}
+}
+#buttonLeft {
+	display: flex;
+	position: absolute;
+	top: 60%;
+	background-color: $wt;
+	width: 32px;
+	height: 32px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	border: 0.2px solid $color2;
+	z-index: 2;
+	margin-left: 17px;
+	&:hover {
+		background-color: $color1;
+	}
+}
+.botoesBottom {
+	display: flex;
+	color: $color3;
+	align-items: center;
+	justify-content: center;
+}
+#verTodos {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 30px;
+	text-align: center;
+	text-decoration-line: underline;
+	color: $color1;
+}

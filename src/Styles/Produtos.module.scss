@@ -1,0 +1,133 @@
+@use 'colors' as *;
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+.titulo {
+	width: 251px;
+	height: 48px;
+	margin-left: 40px;
+	color: $color2;
+	font-family: 'Poppins', Courier, monospace;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 48px;
+	padding: 14px 16px 13px 21px;
+}
+.barraBotoes {
+	margin-top: 7px;
+	display: grid;
+	margin-left: 200px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	gap: 10px;
+}
+#botaoTitulo1 {
+	display: flex;
+	width: 107px;
+	height: 40px;
+	margin-top: 40px;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 16px;
+	background: $color1;
+	color: $wt;
+}
+#botaoTitulo2 {
+	display: flex;
+	width: 107px;
+	height: 40px;
+	margin-top: 40px;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 16px;
+	background: $wt;
+	border: 1px solid $color8;
+	border-radius: 6px;
+	color: $color3;
+}
+#botaoTitulo3 {
+	display: flex;
+	width: 107px;
+	height: 40px;
+	margin-top: 40px;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 16px;
+	background: $wt;
+	border: 1px solid $color8;
+	border-radius: 6px;
+	color: $color3;
+}
+#botaoTitulo4 {
+	display: flex;
+	width: 107px;
+	height: 40px;
+	margin-top: 40px;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 16px;
+	background: $wt;
+	border: 1px solid $color8;
+	border-radius: 6px;
+	color: $color3;
+}
+#botaoTitulo5 {
+	display: flex;
+	width: 107px;
+	height: 40px;
+	margin-top: 40px;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 0 16px;
+	background: $wt;
+	border: 1px solid $color8;
+	border-radius: 6px;
+	color: $color3;
+}
+.barraTitulo {
+	display: inline-flex;
+}
+.botaoTitulo {
+	display: inline-block;
+}

@@ -1,0 +1,62 @@
+@use 'colors' as *;
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+#footer {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 1fr;
+	grid-template-rows: 2fr 1fr 1fr;
+	background: $color1;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: $wt;
+}
+#nosSiga {
+	grid-column: 1;
+	grid-row: 1 / span 3;
+	padding: 48px 75px;
+	border-right: 2px solid $wt;
+	text-align: center;
+	margin-bottom: -2%;
+}
+.titulo {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	color: $wt;
+}
+#icons {
+	display: flex;
+	justify-content: space-around;
+	margin: 10% 20%;
+}
+#formasPgt {
+	grid-row: 2;
+	grid-column: 2 / span 2;
+	border-bottom: 2px solid $wt;
+	padding-left: 56px;
+}
+#assinatura {
+	margin-left: 56px;
+}
+#seguranca {
+	border-bottom: 2px solid $wt;
+}
+#ltda {
+	grid-column: 2 / span 2;
+	grid-row: 3;
+	margin: 0 80px;
+}
+#iconBottom {
+	grid-column: 4;
+	grid-row: 3;
+}
+#institucional {
+	text-align: left;
+}

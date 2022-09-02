@@ -1,0 +1,85 @@
+@use "colors" as *;
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+.container {
+	h1 {
+		position: absolute;
+		width: 184px;
+		height: 48px;
+		left: 56px;
+		top: 704px;
+		font-family: 'Poppins';
+		font-style: normal;
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 48px;
+		color: $color2;
+	}
+}
+.dogs {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr;
+	padding-top: 160px;
+	padding-left: 60px;
+}
+#dog1 {
+	img {
+		padding: 0;
+		border: 5px solid transparent;
+		border-radius: 20px;
+	}
+}
+#dog2 {
+	img {
+		padding: 0;
+		border: 5px solid transparent;
+		border-radius: 20px;
+	}
+}
+#dog3 {
+	img {
+		padding: 0;
+		border: 5px solid transparent;
+		border-radius: 20px;
+	}
+}
+#dog4 {
+	img {
+		padding: 0;
+		border: 5px solid transparent;
+		border-radius: 20px;
+	}
+}
+#categoriaLeft {
+	display: flex;
+	position: absolute;
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	left: 3.8%;
+	bottom: -53.5%;
+	&:hover {
+		background-color: $color1;
+	}
+}
+#categoriaRight {
+	display: flex;
+	position: absolute;
+	background-color: #fff;
+	align-items: center;
+	justify-content: center;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	right: 1.8%;
+	bottom: -53.5%;
+	&:hover {
+		background-color: $color1;
+	}
+}

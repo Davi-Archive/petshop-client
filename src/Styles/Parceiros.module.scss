@@ -1,0 +1,143 @@
+@use 'colors' as *;
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+#parceirosTudo {
+	font-family: 'Poppins';
+	font-style: normal;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 30px;
+	margin-left: 56px;
+}
+#parceiros {
+	width: 590px;
+	height: 290px;
+	background-image: url('../Assets/card1.svg');
+	background-size: cover;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	justify-content: flex-end;
+	padding-top: 60px;
+	padding-left: 40px;
+}
+#assinatura {
+	width: 590px;
+	height: 370px;
+	border-radius: 10px;
+	background: $color6;
+	border-radius: 20px 0px 0px 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-left: 40px;
+	img {
+		display: flex;
+		position: absolute;
+		right: 1%;
+		margin-top: -290px;
+		grid-column: 2;
+	}
+}
+#buttonParc {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+	width: 131px;
+	height: 48px;
+	background: $color1;
+	border: 1px solid $color7;
+	border-radius: 10px;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 24px;
+	text-align: center;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: $wt;
+	margin-top: 35px;
+	&:hover {
+		background-color: $color5;
+		border: $color5;
+	}
+}
+#tituloParc {
+	width: 196px;
+	height: 60px;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 60px;
+	color: $wt;
+	margin-top: 20px;
+}
+#textoParc {
+	width: 181px;
+	height: 48px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	margin-top: 30px;
+	color: $wt;
+}
+#gradient {
+	display: flex;
+	padding-left: 40px;
+	flex-direction: column;
+	width: auto;
+	height: 284px;
+	background: linear-gradient(180deg, #00000000 0%, #000000 85.04%);
+	z-index: 1;
+	margin-left: -40px;
+	margin-bottom: -19px;
+	border-radius: 0px 0px 20px 20px;
+}
+#tituloAssi {
+	margin-top: 10%;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	color: $color2;
+}
+#textoAssi {
+	grid-column: 1;
+}
+#botaoAssi {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	grid-column: 1;
+	box-sizing: border-box;
+	width: 156px;
+	height: 48px;
+	background: $color1;
+	border: 1px solid $color7;
+	border-radius: 10px;
+	font-weight: 900;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: $wt;
+	&:hover {
+		background-color: $color5;
+		border: $color5;
+	}
+}
+#dotsThree {
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	width: 50%;
+	margin-left: 39%;
+	margin-top: 24px;
+	height: 20px;
+	color: $color3;
+	font-weight: 900;
+	align-items: center;
+}
+.circle {
+	margin-left: 16px;
+}

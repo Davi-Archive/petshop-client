@@ -1,0 +1,110 @@
+@use 'colors' as *;
+@font-face {
+	font-family: "Poppins";
+	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
+}
+#bigBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 84px 0 87px 0;
+}
+#box {
+	margin-top: -10px;
+	display: flex;
+	flex-direction: column;
+	width: 65%;
+	height: 346px;
+	border: 2px solid black;
+	align-items: center;
+	justify-content: center;
+	background: $color6;
+	border-radius: 20px;
+}
+#tituloInsc {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 36px;
+	text-align: center;
+	color: $color4;
+	width: 319px;
+	height: 72px;
+	margin-bottom: 24px;
+}
+#divNome {
+	position: relative;
+}
+#divEmail {
+	position: relative;
+}
+#divIconNome {
+	height: 3rem;
+	width: 1.5rem;
+	padding: 4px;
+	position: absolute;
+	top: 50%;
+	left: 2px;
+	transform: translateY(-50%);
+	color: $color3;
+}
+#divIconEmail {
+	height: 3rem;
+	width: 1.5rem;
+	padding: 4px;
+	position: absolute;
+	top: 50%;
+	left: 2px;
+	transform: translateY(-50%);
+	color: $color3;
+}
+#inputNome {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: $color3;
+	width: 343px;
+	height: 48px;
+	padding-left: 3rem;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+#inputMail {
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	color: $color3;
+	width: 343px;
+	height: 48px;
+	padding-left: 3rem;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+#botaoEnviar {
+	box-sizing: border-box;
+	width: 145px;
+	height: 40px;
+	background: $color1;
+	border: 1px solid $color7;
+	border-radius: 10px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 21px;
+	text-align: center;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	margin-top: 32px;
+	color: $wt;
+	&:hover {
+		background-color: $color5;
+		border: $color5;
+	}
+}
