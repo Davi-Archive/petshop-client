@@ -1,6 +1,6 @@
 {
   "success": true,
-  "products": [
+  "categoryDogs": [
     {
       "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog1.svg"
     },
