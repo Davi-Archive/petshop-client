@@ -100,3 +100,18 @@
 		background-color: $color1;
 	}
 }
+
+@media (max-width: 1000px){
+	#barraInsta{
+		margin-left: 50px;
+		max-width: 800px;
+	}
+	#buttonLeft{
+		left: 40%;
+		top: -30%;
+	}
+	#buttonRight{
+		right: 40%;
+		top: -30%;
+	}
+}

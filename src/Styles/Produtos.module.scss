@@ -97,3 +97,9 @@
 .botaoTitulo {
 	display: inline-block;
 }
+
+@media (max-width: 1000px){
+	.barraBotoes{
+		display: none;
+	}
+}

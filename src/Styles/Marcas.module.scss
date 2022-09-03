@@ -235,3 +235,26 @@
 	text-decoration-line: underline;
 	color: $color1;
 }
+
+@media (max-width: 1000px) {
+	#barraMarca {
+		margin-top: 0;
+		margin-left: 30%;
+		max-width: 220px;
+	}
+
+	#buttonLeft {
+		margin-top: -5%;
+		left: 15%;
+	}
+
+	#buttonRight {
+		margin-top: -5%;
+		right: 15%;
+	}
+	.titulo {
+		h1 {
+			margin-bottom: 10px;
+		}
+	}
+}
