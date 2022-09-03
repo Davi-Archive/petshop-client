@@ -5,11 +5,10 @@
 }
 .container {
 	h1 {
-		position: absolute;
 		width: 184px;
 		height: 48px;
 		left: 56px;
-		top: 704px;
+		margin: 80px 0 0 56px;
 		font-family: 'Poppins';
 		font-style: normal;
 		font-weight: 700;
@@ -18,41 +17,8 @@
 		color: $color2;
 	}
 }
-.dogs {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	padding-top: 160px;
-	padding-left: 60px;
-}
-#dog1 {
-	img {
-		padding: 0;
-		border: 5px solid transparent;
-		border-radius: 20px;
-	}
-}
-#dog2 {
-	img {
-		padding: 0;
-		border: 5px solid transparent;
-		border-radius: 20px;
-	}
-}
-#dog3 {
-	img {
-		padding: 0;
-		border: 5px solid transparent;
-		border-radius: 20px;
-	}
-}
-#dog4 {
-	img {
-		padding: 0;
-		border: 5px solid transparent;
-		border-radius: 20px;
-	}
-}
+
+
 #categoriaLeft {
 	display: flex;
 	position: absolute;
@@ -62,8 +28,9 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	left: 3.8%;
-	bottom: -53.5%;
+	left: 5.4%;
+	top: 53.5%;
+	z-index: 1;
 	&:hover {
 		background-color: $color1;
 	}
@@ -77,16 +44,17 @@
 	width: 25px;
 	height: 25px;
 	border-radius: 50%;
-	right: 1.8%;
-	bottom: -53.5%;
+	right: 1%;
+	top: 53.5%;
 	&:hover {
 		background-color: $color1;
 	}
 }
 #barraCard {
 	display: inline-flex;
-	margin: 150px 50px 0 100px;
+	margin: 56px 20px 0 80px;
 	max-width: 1200px;
+	min-width: 300px;
 	overflow: auto;
 	scroll-behavior: smooth;
 	position: relative;
@@ -95,4 +63,9 @@
 		-ms-overflow-style: none;
 		scrollbar-width: none;
 	}
+}
+
+.barraBotao{
+	display: inline-flex;
+	position: relative;
 }

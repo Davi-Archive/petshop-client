@@ -1,5 +1,4 @@
 import styles from '../Styles/categorias.module.scss'
-import dog1 from '../Assets/dog1.svg'
 import {
     AiOutlineLeft,
     AiOutlineRight
@@ -12,14 +11,14 @@ import { v4 as uuidv4 } from 'uuid';
 
 export default function Categorias() {
     const [data, setData] = useState<any[]>([])
-    const ref:any = useRef(null);
+    const ref: any = useRef(null);
 
     function clickRight() {
-        ref.current.scrollLeft -= 300;
-      }
-      function clickLeft() {
         ref.current.scrollLeft += 300;
-      }
+    }
+    function clickLeft() {
+        ref.current.scrollLeft -= 300;
+    }
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/dog.json')
             .then(async response => {
@@ -41,25 +40,27 @@ export default function Categorias() {
         <>
             <div className={styles.container}>
                 <h1>Categorias</h1>
-                <div id={styles.categoriaLeft} onClick={clickLeft}>
-                    <AiOutlineLeft size={15} />
-                </div>
-                <div ref={ref} id={styles.barraCard}>
-                    {data.map(({ photo }: any) => {
-                        return (
-                            <>
-                                <div key={uuidv4()} className="d-flex justify-content-around">
-                                    <Card style={{ width: '18rem', marginRight: '0.8rem'}}>
-                                        <Card.Img variant="top" src={photo} />
-                                    </Card>
-                                </div>
-                            </>
-                        );
-                    })}
+                <div className={styles.barraBotao}>
+                    <div id={styles.categoriaLeft} onClick={clickLeft}>
+                        <AiOutlineLeft size={15} />
+                    </div>
+                    <div ref={ref} id={styles.barraCard}>
+                        {data.map(({ photo }: any) => {
+                            return (
+                                <>
+                                    <div key={uuidv4()} className="d-flex justify-content-around">
+                                        <Card style={{ width: '18rem', marginRight: '0.8rem' }}>
+                                            <Card.Img variant="top" src={photo} />
+                                        </Card>
+                                    </div>
+                                </>
+                            );
+                        })}
 
-                </div>
-                <div id={styles.categoriaRight} onClick={clickRight}>
-                    <AiOutlineRight size={15} />
+                    </div>
+                    <div id={styles.categoriaRight} onClick={clickRight}>
+                        <AiOutlineRight size={15} />
+                    </div>
                 </div>
             </div>
         </>

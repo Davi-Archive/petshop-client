@@ -61,5 +61,43 @@
       "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto2.svg",
       "price": 100000
     }
+  ],
+  "categoryDogs": [
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog1.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog2.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog3.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog4.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog1.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog2.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog3.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog4.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog1.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog2.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog3.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/dog4.svg"
+    }
   ]
 }
