@@ -18,6 +18,8 @@ export default function Marcas() {
     { image: marca3 }
   ]
 
+  
+
   function clickRight() {
     var marcas = document.getElementById(styles.barraMarca)
     return marcas!.scrollLeft += 240;

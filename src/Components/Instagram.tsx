@@ -3,6 +3,8 @@ import insta1 from '../Assets/insta1.svg'
 import insta2 from '../Assets/insta2.svg'
 import insta3 from '../Assets/insta3.svg'
 import {AiOutlineLeft, AiOutlineRight} from 'react-icons/ai'
+import { useEffect, useState } from 'react'
+import { setEnvironmentData } from 'worker_threads'
 
 
 export default function Instagram() {
@@ -19,6 +21,13 @@ export default function Instagram() {
     { image: insta2 },
     { image: insta3 }
   ]
+const [data, setData] = useState([])
+
+useEffect(()=>{
+  fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
+  .then(data => setData(data.instaData))
+})
+console.log(data)
 
   function clickRight() {
     var instagram = document.getElementById(styles.barraInsta);

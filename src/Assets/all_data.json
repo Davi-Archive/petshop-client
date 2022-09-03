@@ -178,5 +178,52 @@
     {
       "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta1.svg"
     }
+  ],
+  "instaData": [
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca1.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca2.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca3.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca1.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca2.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca3.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca1.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca2.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca3.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca1.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca2.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca3.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca1.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca2.svg"
+    },
+    {
+      "marca": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/marca3.svg"
+    }
   ]
 }
