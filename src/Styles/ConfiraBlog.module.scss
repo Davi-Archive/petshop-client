@@ -1,11 +1,13 @@
 @use "colors" as *;
+
 @font-face {
 	font-family: "Poppins";
 	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
 }
+
 /* HIDE SCROLLBAR */
 .titulo {
-	width: 350px;
+	width: 450px;
 	height: 48px;
 	margin-left: 40px;
 	color: $color2;
@@ -15,30 +17,37 @@
 	font-size: 17px;
 	line-height: 48px;
 	padding: 14px 16px 13px 21px;
-	margin-bottom: 30px;
+	margin-top: 80px;
 }
+
 .wrapper {
 	font-family: 'Poppins';
 	font-style: normal;
 	position: relative;
+	max-width: 1230px;
+	margin-left: -20px;
 }
+
 #barraBlog {
 	display: inline-flex;
-	margin: 10px 50px;
+	margin: 40px 50px 10px 50px;
 	height: 440px;
 	width: 100%;
 	max-width: 1240px;
 	overflow: auto;
 	scroll-behavior: smooth;
+
 	&::-webkit-scrollbar {
 		display: none;
 		-ms-overflow-style: none;
 		scrollbar-width: none;
 	}
 }
+
 .logoPhoto {
 	width: 253px;
 }
+
 .blogBox {
 	display: flex;
 	flex-direction: column;
@@ -52,6 +61,7 @@
 	z-index: 1;
 	background: $color6;
 }
+
 .imgBox {
 	display: flex;
 	margin-left: -12px;
@@ -59,13 +69,16 @@
 	z-index: -1;
 	border-radius: 18px 18px 0 0;
 }
+
 .textBox {
 	background: $color6;
 	margin-top: 40px;
 	width: 230px;
 }
+
 .buttonEnviar {
 	box-sizing: border-box;
+	margin-top: -50px;
 	width: 153px;
 	height: 48px;
 	background: $color1;
@@ -79,16 +92,19 @@
 	text-transform: uppercase;
 	color: $wt;
 	margin-bottom: -150px;
+
 	&:hover {
 		background-color: $color5;
 	}
 }
+
 .boxTitulo {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 30px;
 	color: $color4;
 }
+
 .boxDes {
 	font-weight: 400;
 	font-size: 14px;
@@ -96,6 +112,7 @@
 	color: $color3;
 	padding: 16px 0 24px 0;
 }
+
 #buttonRight {
 	display: flex;
 	position: absolute;
@@ -108,11 +125,13 @@
 	border-radius: 50%;
 	border: 0.2px solid $color2;
 	z-index: 2;
-	right: 2%;
+	right: -4.3%;
+
 	&:hover {
 		background-color: $color1;
 	}
 }
+
 #buttonLeft {
 	display: flex;
 	position: absolute;
@@ -125,8 +144,20 @@
 	border-radius: 50%;
 	border: 0.2px solid $color2;
 	z-index: 2;
-	margin-left: 17px;
+	margin-left: 30px;
+	left:0%;
+
 	&:hover {
 		background-color: $color1;
 	}
+}
+
+#blogCard {
+	margin-right: 20px;
+	background-color: $color6;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 21px;
+	color: $color3;
+	height: 419px;
 }

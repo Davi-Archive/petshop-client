@@ -84,7 +84,8 @@ export default function Header() {
                         <p>As melhores guias</p>
                         <p>para os melhores</p>
                         <p>passeios.</p>
-                        <p></p>
+                    </div>
+                    <div id={header.ButtonSelect}>
                         <button name='confira' id={header.buttonConfira}>Confira</button>
                     </div>
                     <div id={header.dotsThree}>

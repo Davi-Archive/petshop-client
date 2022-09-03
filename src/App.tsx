@@ -14,13 +14,13 @@ import { ThemeProvider } from 'react-bootstrap';
 function App() {
   return (
     <div className={styles.divBody}>
-      <header>
-        <Header />
-      </header>
-      <div>
+      <div className={styles.mainWrapper}>
         <ThemeProvider
           breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
           minBreakpoint="xxs">
+      <header>
+        <Header />
+      </header>
           <Categorias />
           <Produtos />
           <Marcas />
@@ -29,7 +29,7 @@ function App() {
           <Instagram />
           <Inscrevase />
           <Footer />
-        </ThemeProvider>;
+        </ThemeProvider>
       </div>
     </div>
   );

@@ -20,11 +20,11 @@ export default function Instagram() {
 
   function clickRight() {
     var instagram = document.getElementById(styles.barraInsta);
-    return instagram!.scrollLeft += 245;
+    return instagram!.scrollLeft += 178;
   }
   function clickLeft() {
     var instagram = document.getElementById(styles.barraInsta);
-    return instagram!.scrollLeft -= 245;
+    return instagram!.scrollLeft -= 178;
   }
   return (
     <div className={styles.wrapper}>

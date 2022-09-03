@@ -41,13 +41,11 @@ export default function Card({ data }: any) {
   }
   function scroll(x: number) {
     var produtos = document.getElementById(styles.barraCard)
-    produtos!.scrollTo(x, 0)
-    return produtos!.scrollLeft -= 307;
+    return produtos!.scrollTo(x , x)
+
   }
 
   function adicionarProduto(productName: string, price: number, descriptionShort: string, photo: any) {
-    /* handleShow(); */
-    console.log(productName, price, descriptionShort, photo)
     handleShow()
     setModalProductName(productName)
     setModalPrice(price)
