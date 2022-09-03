@@ -1,6 +1,6 @@
 # Teste Econverse: Vaga Desenvolvedor Front-End Jr
 
-[Demo](https://davi38.github.io/ecommerce-front-end/)
+[Demo](https://davi38.github.io/pet-shop-site/)
 
 Segue abaixo as instruções para a execução do teste.
 
