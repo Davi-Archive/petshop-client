@@ -1,33 +1,21 @@
 import styles from '../Styles/Instagram.module.scss'
-import insta1 from '../Assets/insta1.svg'
-import insta2 from '../Assets/insta2.svg'
-import insta3 from '../Assets/insta3.svg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import { useEffect, useState } from 'react'
-import { setEnvironmentData } from 'worker_threads'
 
 
 export default function Instagram() {
 
-
-  const resposta = [
-    { image: insta1 },
-    { image: insta2 },
-    { image: insta3 },
-    { image: insta1 },
-    { image: insta2 },
-    { image: insta3 },
-    { image: insta1 },
-    { image: insta2 },
-    { image: insta3 }
-  ]
   const [data, setData] = useState([])
 
   useEffect(() => {
     fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
       .then(async resposta => {
         const data = await resposta.json();
-        console.log(data.instaData)
+        if (!resposta.ok) {
+          // get error message from body or default to response statusText
+          const error = (data && data.message) || resposta.statusText;
+          return Promise.reject(error);
+      }
         setData(data.instaData)
       }
       )
@@ -35,7 +23,6 @@ export default function Instagram() {
         console.error('There was an error!', error);
     });
   },[])
-  console.log(data)
 
   function clickRight() {
     var instagram = document.getElementById(styles.barraInsta);

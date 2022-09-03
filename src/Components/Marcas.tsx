@@ -1,24 +1,31 @@
 import styles from '../Styles/Marcas.module.scss'
-import marca1 from '../Assets/marca1.svg'
-import marca2 from '../Assets/marca2.svg'
-import marca3 from '../Assets/marca3.svg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+import { useEffect, useState } from 'react'
 
 
 export default function Marcas() {
- const resposta = [
-    { image: marca1 },
-    { image: marca2 },
-    { image: marca3 },
-    { image: marca1 },
-    { image: marca2 },
-    { image: marca3 },
-    { image: marca1 },
-    { image: marca2 },
-    { image: marca3 }
-  ]
 
-  
+const [data, setData] = useState([]);
+
+  useEffect(()=>{
+    fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
+    .then(async (resposta)=>{
+      const data = await resposta.json()
+
+      // check for error response
+       if (!resposta.ok) {
+        // get error message from body or default to response statusText
+        const error = (data && data.message) || resposta.statusText;
+        return Promise.reject(error);
+    }
+      setData(data.marcaData)
+    })
+    .catch(error => {
+      console.error('There was an error!', error);
+  });
+  })
+
+
 
   function clickRight() {
     var marcas = document.getElementById(styles.barraMarca)
@@ -42,11 +49,11 @@ export default function Marcas() {
         <AiOutlineRight size={15} />
       </div>
       <div id={styles.barraMarca}>
-        {resposta.map((data, key) => {
+        {data.map(({marca}, key) => {
           return (
             <div key={key} className={styles.marcaBox}>
               <div className={styles.productName}>
-                <img src={data.image} alt='Foto do Produto'></img>
+                <img src={marca} alt='Foto do Produto'></img>
               </div>
             </div>
           );
