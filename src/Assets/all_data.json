@@ -137,5 +137,43 @@
     {
       "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/blog4.svg"
     }
+  ],
+  "instaData": [
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta1.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta2.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta3.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta1.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta2.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta3.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta1.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta2.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta3.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta1.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta2.svg"
+    },
+    {
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/insta3.svg"
+    }
   ]
 }

@@ -11,13 +11,21 @@ export default function ConfiraBlog() {
 
   useEffect(()=>{
     fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
-    .then(async response => {
-      const data = await response.json();
-      setData(data.blogData)
-    })
-  }, [])
+            .then(async response => {
+                const data = await response.json();
 
-console.log(data)
+                // check for error response
+                if (!response.ok) {
+                    // get error message from body or default to response statusText
+                    const error = (data && data.message) || response.statusText;
+                    return Promise.reject(error);
+                }
+                setData(data.blogData)
+            })
+            .catch(error => {
+                console.error('There was an error!', error);
+            });
+  }, [])
 
   function clickBlogRight() {
     var blog = document.getElementById(styles.barraBlog)

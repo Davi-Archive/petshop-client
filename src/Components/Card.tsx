@@ -68,7 +68,7 @@ export default function Card({ data }: any) {
         <div id={styles.buttonRight} onClick={clickRight}>
           <AiOutlineRight size={20} />
         </div>
-        <div id={styles.barraCard} className='barraCardRoll'>
+        <div id={styles.barraCard} className='barraCardRoll' key={uuidv4()}>
           {data?.map(({ productName, price, descriptionShort, photo }: any) => {
             return (
               <>
@@ -94,7 +94,7 @@ export default function Card({ data }: any) {
                   <Modal.Body key={uuidv4()}>
                     <div key={uuidv4()} className='text-center'>
                       <p key={uuidv4()} >
-                        <img  key={uuidv4()} src={modalPhoto} alt={`Foto do ${modalProductName}`} />
+                        <img key={uuidv4()} src={modalPhoto} alt={`Foto do ${modalProductName}`} />
                       </p>
                       <p key={uuidv4()}>
                         Descrição: {modalDescriptionShort}
