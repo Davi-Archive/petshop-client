@@ -1,29 +1,12 @@
 import styles from '../Styles/ConfiraBlog.module.scss'
-import blog1 from '../Assets/blog1.svg'
-import blog2 from '../Assets/blog2.svg'
-import blog3 from '../Assets/blog3.svg'
-import blog4 from '../Assets/blog4.svg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { v4 as uuidv4 } from 'uuid';
 import { useEffect, useState } from 'react'
-import { setEnvironmentData } from 'worker_threads'
 
-export default function ConfiraBlog() {
-  const resposta = [
-    { image: blog1 },
-    { image: blog2 },
-    { image: blog3 },
-    { image: blog4 },
-    { image: blog1 },
-    { image: blog2 },
-    { image: blog3 },
-    { image: blog4 },
-    { image: blog1 }
-  ]
 
-  const [data, setData] = useState();
+  const [data, setData] = useState([]);
 
   useEffect(()=>{
     fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
@@ -55,12 +38,12 @@ console.log(data)
         <AiOutlineRight size={15} />
       </div>
       <div id={styles.barraBlog}>
-        {resposta.map(({image}, key) => {
+        {data.map(({ photo }:any) => {
           return (
             <>
                <div key={uuidv4()} className="d-flex justify-content-around gap-3">
                 <Card key={uuidv4()} style={{ width: '18rem' }}>
-                  <Card.Img key={uuidv4()} variant="top" src={image}/>
+                  <Card.Img key={uuidv4()} variant="top" src={photo}/>
                   <Card.Body key={uuidv4()} >
                     <Card.Title key={uuidv4()} >Lorem ipsum dolor sit amet consectetur.</Card.Title>
                     <Card.Text key={uuidv4()} >

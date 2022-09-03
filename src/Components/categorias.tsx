@@ -31,7 +31,6 @@ export default function Categorias() {
                     return Promise.reject(error);
                 }
                 setData(data.categoryDogs)
-                console.log(data.categoryDogs)
             })
             .catch(error => {
                 console.error('There was an error!', error);
@@ -50,8 +49,8 @@ export default function Categorias() {
                             return (
                                 <>
                                     <div key={uuidv4()} className="d-flex justify-content-around">
-                                        <Card style={{ width: '18rem', marginRight: '0.8rem' }}>
-                                            <Card.Img variant="top" src={photo} />
+                                        <Card key={uuidv4()} style={{ width: '18rem', marginRight: '0.8rem' }}>
+                                            <Card.Img key={uuidv4()} variant="top" src={photo} />
                                         </Card>
                                     </div>
                                 </>
