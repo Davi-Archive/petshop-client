@@ -1,20 +1,25 @@
 import styles from '../Styles/categorias.module.scss'
 import dog1 from '../Assets/dog1.svg'
-import dog2 from '../Assets/dog2.svg'
-import dog3 from '../Assets/dog3.svg'
-import dog4 from '../Assets/dog4.svg'
 import {
     AiOutlineLeft,
     AiOutlineRight
 } from 'react-icons/ai'
 import { Card } from 'react-bootstrap'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useRef } from 'react'
+import { v4 as uuidv4 } from 'uuid';
 
 
 
 export default function Categorias() {
-    const [data, setData] = useState([])
+    const [data, setData] = useState<any[]>([])
+    const ref:any = useRef(null);
 
+    function clickRight() {
+        ref.current.scrollLeft -= 300;
+      }
+      function clickLeft() {
+        ref.current.scrollLeft += 300;
+      }
     useEffect(() => {
         fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/dog.json')
             .then(async response => {
@@ -26,46 +31,34 @@ export default function Categorias() {
                     const error = (data && data.message) || response.statusText;
                     return Promise.reject(error);
                 }
-
-                setData(data)
+                setData(data.categoryDogs)
             })
             .catch(error => {
                 console.error('There was an error!', error);
             });
     }, [])
-
-    console.log(data)
     return (
         <>
             <div className={styles.container}>
                 <h1>Categorias</h1>
-                <div id={styles.categoriaLeft}>
+                <div id={styles.categoriaLeft} onClick={clickLeft}>
                     <AiOutlineLeft size={15} />
                 </div>
-                <div className={styles.dogs}>
-                    <div className="d-flex justify-content-around">
-                        {/* {dog.map((dog)=>{
+                <div ref={ref} id={styles.barraCard}>
+                    {data.map(({ photo }: any) => {
+                        return (
+                            <>
+                                <div key={uuidv4()} className="d-flex justify-content-around">
+                                    <Card style={{ width: '18rem', marginRight: '0.8rem'}}>
+                                        <Card.Img variant="top" src={photo} />
+                                    </Card>
+                                </div>
+                            </>
+                        );
+                    })}
 
-                   })} */}
-                        <Card style={{ width: '18rem' }}>
-                            <Card.Img variant="top" src={dog1} />
-                        </Card>
-                    </div>
-
-                    <div id={styles.dog1}>
-                        <img src={dog1} alt='Cachorro com bola'></img>
-                    </div>
-                    <div id={styles.dog2}>
-                        <img src={dog2} alt='Cachorro com bola'></img>
-                    </div>
-                    <div id={styles.dog3}>
-                        <img src={dog3} alt='Cachorro com bola'></img>
-                    </div>
-                    <div id={styles.dog4}>
-                        <img src={dog4} alt='Cachorro com bola'></img>
-                    </div>
                 </div>
-                <div id={styles.categoriaRight}>
+                <div id={styles.categoriaRight} onClick={clickRight}>
                     <AiOutlineRight size={15} />
                 </div>
             </div>

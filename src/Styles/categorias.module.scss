@@ -83,3 +83,16 @@
 		background-color: $color1;
 	}
 }
+#barraCard {
+	display: inline-flex;
+	margin: 150px 50px 0 100px;
+	max-width: 1200px;
+	overflow: auto;
+	scroll-behavior: smooth;
+	position: relative;
+	&::-webkit-scrollbar {
+		display: none;
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+}
