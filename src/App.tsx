@@ -8,6 +8,7 @@ import ConfiraBlog from './Components/ConfiraBlog';
 import Instagram from './Components/Instagram';
 import Inscrevase from './Components/inscrevase';
 import Footer from './Components/Footer';
+import { ThemeProvider } from 'react-bootstrap';
 
 
 function App() {
@@ -17,14 +18,18 @@ function App() {
         <Header />
       </header>
       <div>
-        <Categorias />
-        <Produtos />
-        <Marcas />
-        <Parceiros />
-        <ConfiraBlog />
-        <Instagram />
-        <Inscrevase />
-        <Footer />
+        <ThemeProvider
+          breakpoints={['xxxl', 'xxl', 'xl', 'lg', 'md', 'sm', 'xs', 'xxs']}
+          minBreakpoint="xxs">
+          <Categorias />
+          <Produtos />
+          <Marcas />
+          <Parceiros />
+          <ConfiraBlog />
+          <Instagram />
+          <Inscrevase />
+          <Footer />
+        </ThemeProvider>;
       </div>
     </div>
   );

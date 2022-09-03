@@ -4,6 +4,9 @@ import blog2 from '../Assets/blog2.svg'
 import blog3 from '../Assets/blog3.svg'
 import blog4 from '../Assets/blog4.svg'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import { v4 as uuidv4 } from 'uuid';
 
 export default function ConfiraBlog() {
   const resposta = [
@@ -38,24 +41,23 @@ export default function ConfiraBlog() {
         <AiOutlineRight size={15} />
       </div>
       <div id={styles.barraBlog}>
-        {resposta.map((data, key) => {
+        {resposta.map(({image}, key) => {
           return (
-            <div key={key} className={styles.blogBox}>
-              <div className={styles.logoPhoto}>
-                <img className={styles.imgBox} src={data.image} alt='Foto do Produto'></img>
+            <>
+               <div key={uuidv4()} className="d-flex justify-content-around gap-3">
+                <Card key={uuidv4()} style={{ width: '18rem' }}>
+                  <Card.Img key={uuidv4()} variant="top" src={image}/>
+                  <Card.Body key={uuidv4()} >
+                    <Card.Title key={uuidv4()} >Lorem ipsum dolor sit amet consectetur.</Card.Title>
+                    <Card.Text key={uuidv4()} >
+                    Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.
+                    </Card.Text>
+                    <Button key={uuidv4()} variant="primary">Ler artigo</Button>
+                  </Card.Body>
+                </Card>
               </div>
-              <div className={styles.textBox}>
-                <div className={styles.boxTitulo}>
-                Lorem ipsum dolor sit amet consectetur.
-                </div>
-                <div className={styles.boxDes}>
-                Lorem ipsum dolor sit amet, consectetur elit adipiscing dignissim posuere vitae.
-                </div>
-                <div>
-                  <button className={styles.buttonEnviar}>Ler artigo</button>
-                </div>
-              </div>
-            </div>
+
+            </>
           );
         })}
       </div>

@@ -4,61 +4,61 @@
     {
       "productName": "Brinquedo Kong Duratreat Ring 1",
       "descriptionShort": "Brinquedo Kong Duratreat Ring 1",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto1.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto1.svg",
       "price": 15000
     },
     {
       "productName": "Bola de Tênis Chuckit 1",
       "descriptionShort": "Bola de Tênis Chuckit 1",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto2.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto2.svg",
       "price": 9000
     },
     {
       "productName": "Brinquedo Kong Duratreat Ring 2",
       "descriptionShort": "Brinquedo Kong Duratreat Ring 2",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto1.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto1.svg",
       "price": 14990
     },
     {
       "productName": "Bola de Tênis Chuckit 2",
       "descriptionShort": "Bola de Tênis Chuckit 2",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto2.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto2.svg",
       "price": 12000
     },
     {
       "productName": "Brinquedo Kong Duratreat Ring 3",
       "descriptionShort": "Brinquedo Kong Duratreat Ring 3",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto1.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto1.svg",
       "price": 4550
     },
     {
       "productName": "Bola de Tênis Chuckit 3",
       "descriptionShort": "Bola de Tênis Chuckit 3",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto2.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto2.svg",
       "price": 38000
     },
     {
       "productName": "Brinquedo Kong Duratreat Ring 4",
       "descriptionShort": "Brinquedo Kong Duratreat Ring 4",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto1.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto1.svg",
       "price": 42000
     },
     {
       "productName": "Bola de Tênis Chuckit 4",
       "descriptionShort": "Bola de Tênis Chuckit 4",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto2.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto2.svg",
       "price": 520
     },
     {
       "productName": "Brinquedo Kong Duratreat Ring 5",
       "descriptionShort": "Brinquedo Kong Duratreat Ring 5",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto1.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto1.svg",
       "price": 149990
     },
     {
       "productName": "Bola de Tênis Chuckit 5",
       "descriptionShort": "Bola de Tênis Chuckit 5",
-      "photo": "https://raw.githubusercontent.com/davi38/ecommerce-front-end/master/src/Assets/produto2.svg",
+      "photo": "https://raw.githubusercontent.com/davi38/pet-shop-site/master/src/Assets/produto2.svg",
       "price": 100000
     }
   ]

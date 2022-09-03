@@ -3,10 +3,12 @@ import Card from "./Card";
 import styles from '../Styles/Produtos.module.scss'
 import jsonData from '../Assets/produtos.json'
 
+
 export default function Produtos() {
     const [data, setData] = useState<any>();
 
-   function getProducts() {
+
+    function getProducts() {
         const response = jsonData
         setData(response.products)
     }
@@ -40,7 +42,7 @@ export default function Produtos() {
                     </div>
                 </div>
             </div>
-            <Card  data={data} />
+            <Card data={data} />
             <p></p>
         </div>
     )
