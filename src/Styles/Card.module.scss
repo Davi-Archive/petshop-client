@@ -175,3 +175,21 @@
 .circle {
 	margin: 8px 8px 0 8px;
 }
+
+.textoModal,
+.precoModal{
+	font-family: 'Lato';
+	font-style: normal;
+	font-size: 20px;
+	line-height: 100%;
+	letter-spacing: 0.05em;
+	color: #041E50;
+}
+
+
+.textoModal{
+	font-weight: 400;
+}
+.precoModal{
+	font-weight: 900;
+}

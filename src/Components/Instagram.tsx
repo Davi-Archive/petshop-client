@@ -1,27 +1,21 @@
 import styles from '../Styles/Instagram.module.scss'
 import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import { useEffect, useState } from 'react'
+import { fetchData } from './Api/FetchData'
 
 
 export default function Instagram() {
 
   const [data, setData] = useState([])
 
+  function pullData(){
+    fetchData().then((res)=>{
+      setData(res.instaData)
+    })
+  }
+
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
-      .then(async resposta => {
-        const data = await resposta.json();
-        if (!resposta.ok) {
-          // get error message from body or default to response statusText
-          const error = (data && data.message) || resposta.statusText;
-          return Promise.reject(error);
-      }
-        setData(data.instaData)
-      }
-      )
-      .catch(error => {
-        console.error('There was an error!', error);
-    });
+    pullData()
   },[])
 
   function clickRight() {

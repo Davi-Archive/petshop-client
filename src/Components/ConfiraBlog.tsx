@@ -4,27 +4,20 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { v4 as uuidv4 } from 'uuid';
 import { useEffect, useState } from 'react'
+import { fetchData } from './Api/FetchData';
 
 export default function ConfiraBlog() {
 
   const [data, setData] = useState([]);
 
-  useEffect(()=>{
-    fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
-            .then(async response => {
-                const data = await response.json();
+  function pullData(){
+    fetchData().then((res)=>{
+      setData(res.blogData)
+    })
+  }
 
-                // check for error response
-                if (!response.ok) {
-                    // get error message from body or default to response statusText
-                    const error = (data && data.message) || response.statusText;
-                    return Promise.reject(error);
-                }
-                setData(data.blogData)
-            })
-            .catch(error => {
-                console.error('There was an error!', error);
-            });
+  useEffect(()=>{
+   pullData()
   }, [])
 
   function clickBlogRight() {

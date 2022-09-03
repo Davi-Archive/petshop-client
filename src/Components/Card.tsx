@@ -4,12 +4,9 @@ import { FaCircle } from 'react-icons/fa'
 import { BiCircle } from 'react-icons/bi'
 import { useState } from 'react'
 import { v4 as uuidv4 } from 'uuid';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal'
 import ModalTitle from 'react-bootstrap/ModalTitle'
-
-
-
+import { Container, Row, Col } from 'react-bootstrap'
 
 export default function Card({ data }: any) {
   const [button1, setButton1] = useState(true);
@@ -74,7 +71,7 @@ export default function Card({ data }: any) {
               <>
                 <div key={uuidv4()} className={styles.cardMain}>
                   <img key={uuidv4()} src={photo} alt='Foto do Produto'></img>
-                  <div  key={uuidv4()} className={styles.textTop}>
+                  <div key={uuidv4()} className={styles.textTop}>
                     40% Off
                   </div>
                   <div key={uuidv4()} className={styles.heartIcon}>
@@ -87,31 +84,38 @@ export default function Card({ data }: any) {
                   <div key={uuidv4()} className={styles.paraAssinantes}>Para assinantes</div>
                   <div key={uuidv4()} className={styles.botaoAdicionar} onClick={() => adicionarProduto(productName, price, descriptionShort, photo)}>Adicionar</div>
                 </div>
-                <Modal key={uuidv4()} show={show} onHide={handleClose}>
+                <Modal key={uuidv4()} show={show} onHide={handleClose} size='lg'>
                   <Modal.Header closeButton key={uuidv4()}>
-                    <ModalTitle key={uuidv4()}>{modalProductName}</ModalTitle>
                   </Modal.Header>
                   <Modal.Body key={uuidv4()}>
-                    <div key={uuidv4()} className='text-center'>
-                      <p key={uuidv4()} >
-                        <img key={uuidv4()} src={modalPhoto} alt={`Foto do ${modalProductName}`} />
-                      </p>
-                      <p key={uuidv4()}>
-                        Descrição: {modalDescriptionShort}
-                      </p>
-                      <p key={uuidv4()}>
-                        Preço: {modalPrice}
-                      </p>
-                    </div>
+                    <Container>
+                      <Row>
+                        <Col>
+                        <div className='text-right' style={{marginLeft: '25%'}}>
+                          <p key={uuidv4()} >
+                            <img key={uuidv4()} src={modalPhoto} alt={`Foto do ${modalProductName}`} />
+                          </p>
+                        </div>
+                        </Col>
+                        <Col>
+                          <div key={uuidv4()} className='text-left'>
+                            <ModalTitle key={uuidv4()}><p className={styles.textoModal}>{modalProductName}</p></ModalTitle>
+                            <p className={styles.precoModal} key={uuidv4()}>
+                              Preço: {modalPrice}
+                            </p>
+                            <p key={uuidv4()}>
+                              Descrição: {modalDescriptionShort}
+                            </p>
+                            <p>
+                              <a href='#top' onClick={handleClose}>Veja mais sobre o Produto</a>
+                            </p>
+                          </div>
+                        </Col>
+                      </Row>
+                    </Container>
+
+
                   </Modal.Body>
-                  <Modal.Footer key={uuidv4()}>
-                    <Button key={uuidv4()} variant="secondary" onClick={handleClose}>
-                      Fechar
-                    </Button>
-                    <Button key={uuidv4()} variant="primary" onClick={handleClose}>
-                      Comprar
-                    </Button>
-                  </Modal.Footer>
                 </Modal>
               </>
             );

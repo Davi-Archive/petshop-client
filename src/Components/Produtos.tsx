@@ -1,26 +1,17 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 import styles from '../Styles/Produtos.module.scss'
+import { fetchData } from "./Api/FetchData";
 
 export default function Produtos() {
     const [data, setData] = useState<any>();
 
-    useEffect(() => {
-        fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
-            .then(async response => {
-                const data = await response.json();
+   function pullData(){
+       fetchData().then((res=>setData(res.products)))
+   }
 
-                // check for error response
-                if (!response.ok) {
-                    // get error message from body or default to response statusText
-                    const error = (data && data.message) || response.statusText;
-                    return Promise.reject(error);
-                }
-                setData(data.products)
-            })
-            .catch(error => {
-                console.error('There was an error!', error);
-            });
+    useEffect(() => {
+        pullData()
     }, [])
 
     return (
