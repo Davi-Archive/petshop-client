@@ -7,6 +7,8 @@ import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai'
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { v4 as uuidv4 } from 'uuid';
+import { useEffect, useState } from 'react'
+import { setEnvironmentData } from 'worker_threads'
 
 export default function ConfiraBlog() {
   const resposta = [
@@ -20,6 +22,18 @@ export default function ConfiraBlog() {
     { image: blog4 },
     { image: blog1 }
   ]
+
+  const [data, setData] = useState();
+
+  useEffect(()=>{
+    fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
+    .then(async response => {
+      const data = await response.json();
+      setData(data.blogData)
+    })
+  }, [])
+
+console.log(data)
 
   function clickBlogRight() {
     var blog = document.getElementById(styles.barraBlog)

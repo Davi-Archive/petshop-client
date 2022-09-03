@@ -20,7 +20,7 @@ export default function Categorias() {
         ref.current.scrollLeft -= 300;
     }
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/dog.json')
+        fetch('https://raw.githubusercontent.com/davi38/pet-shop-site/main/src/Assets/all_data.json')
             .then(async response => {
                 const data = await response.json();
 
@@ -31,6 +31,7 @@ export default function Categorias() {
                     return Promise.reject(error);
                 }
                 setData(data.categoryDogs)
+                console.log(data.categoryDogs)
             })
             .catch(error => {
                 console.error('There was an error!', error);
