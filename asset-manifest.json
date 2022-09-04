@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/pet-shop-site/static/css/main.84988a23.css",
-    "main.js": "/pet-shop-site/static/js/main.3ecca46a.js",
+    "main.css": "/pet-shop-site/static/css/main.de6dc6bd.css",
+    "main.js": "/pet-shop-site/static/js/main.e0acfad0.js",
     "static/js/787.1969a9c1.chunk.js": "/pet-shop-site/static/js/787.1969a9c1.chunk.js",
     "static/media/header-fundo.svg": "/pet-shop-site/static/media/header-fundo.7f9db13f7373866e9c13.svg",
     "static/media/card1.svg": "/pet-shop-site/static/media/card1.440663b783830c2b1933.svg",
@@ -11,12 +11,12 @@
     "static/media/caoselheiro.svg": "/pet-shop-site/static/media/caoselheiro.733e36f218dbdb4b9180d016b370bd4c.svg",
     "static/media/caixaProduto.svg": "/pet-shop-site/static/media/caixaProduto.13c2f8f24ffe1e8957ad1783b4df8971.svg",
     "index.html": "/pet-shop-site/index.html",
-    "main.84988a23.css.map": "/pet-shop-site/static/css/main.84988a23.css.map",
-    "main.3ecca46a.js.map": "/pet-shop-site/static/js/main.3ecca46a.js.map",
+    "main.de6dc6bd.css.map": "/pet-shop-site/static/css/main.de6dc6bd.css.map",
+    "main.e0acfad0.js.map": "/pet-shop-site/static/js/main.e0acfad0.js.map",
     "787.1969a9c1.chunk.js.map": "/pet-shop-site/static/js/787.1969a9c1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.84988a23.css",
-    "static/js/main.3ecca46a.js"
+    "static/css/main.de6dc6bd.css",
+    "static/js/main.e0acfad0.js"
   ]
 }
