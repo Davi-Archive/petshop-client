@@ -2,6 +2,8 @@
 
 [Demo](https://davi38.github.io/pet-shop-site/)
 
+https://user-images.githubusercontent.com/107776531/188292835-fd3e410a-571a-436c-9876-9804ec122e5d.mp4
+
 Segue abaixo as instruções para a execução do teste.
 
 ## Instruções
