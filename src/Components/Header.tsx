@@ -41,17 +41,17 @@ export default function Header() {
                 <div id={header.header}>
                     <Container>
                         <Row>
-                            <Col>
+                            <Col lg={true}>
                                 <div id={header.compraSegura}>
                                     <BsShieldCheck /> Compra <span className={header.yellow}> 100% segura</span>
                                 </div>
                             </Col>
-                            <Col>
+                            <Col lg={true}>
                                 <div id={header.freteGratis}>
                                     <BsTruck /> <span className={header.yellow}>Frete grátis</span> acima de R$ 200
                                 </div>
                             </Col>
-                            <Col>
+                            <Col lg={true}>
                                 <div id={header.parceleCompras}>
                                     <BsCreditCard /> <span className={header.yellow}>Parcele</span> suas compras
                                 </div>
@@ -73,22 +73,22 @@ export default function Header() {
                             </Col>
                             <Col>
                                 <div id={header.icons}>
-                                    <Col>
+                                    <Col lg={true} >
                                         <div id={header.caixaIcon}>
                                             <img src={caixaProduto} alt='Caixa' width='24px' height='20px'></img>
                                         </div>
                                     </Col>
-                                    <Col>
+                                    <Col lg={true}>
                                         <div id={header.heartIcon}>
                                             <BsHeart size={22} />
                                         </div>
                                     </Col>
-                                    <Col>
+                                    <Col lg={true}>
                                         <div id={header.userIcon}>
                                             <BiUserCircle size={22} />
                                         </div>
                                     </Col>
-                                    <Col>
+                                    <Col lg={true}>
                                         <div id={header.cartIcon}>
                                             <BsCart3 size={22} />
                                         </div>
@@ -138,43 +138,6 @@ export default function Header() {
                                 </Container>
                             </Navbar>
                         </div>
-
-                        {/* <Container>
-                            <Row>
-                                <Col>
-                                    Brincar
-                                </Col>
-                                <Col>
-                                    Morder
-                                </Col>
-                                <Col>
-                                    Comer
-                                </Col>
-                                <Col>
-                                    Passear
-                                </Col>
-                                <Col>
-                                    Casa e Conforto
-                                </Col>
-                                <Col>
-                                    Educação
-                                </Col>
-                                <Col>
-
-                                </Col>
-                                <Col>
-
-                                </Col>
-                            </Row>
-                        </Container> */}
-
-
-
-
-
-
-
-
                     </div>
                 </div>
                 <div id={header.select}>

@@ -366,6 +366,13 @@ ul#navbarMenu {
 			display: none;
 			width: 100%;
 		}
-
 	}
+		#select {
+			max-width: 800px;
+			width: 100%;
+			height: 490px;
+			background: url('../Assets/header-fundo.svg') no-repeat;
+			background-size: cover;
+			z-index: 700;
+		}
 }

@@ -1,18 +1,21 @@
 @use 'colors' as *;
+
 @font-face {
 	font-family: "Poppins";
 	src: url("../Assets/Poppins-Regular.ttf") format("truetype");
 }
+
 #parceirosTudo {
 	font-family: 'Poppins';
 	font-style: normal;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
+	display: flex;
 	margin-top: 30px;
-	margin-left: 16px;
+	margin-left: -20px;
+	width: 100%;
 }
+
 #parceiros {
-	width: 590px;
+	width: 530px;
 	height: 370px;
 	background-image: url('../Assets/card1.svg');
 	background-size: cover;
@@ -24,9 +27,10 @@
 	padding-top: 60px;
 	padding-left: 40px;
 }
+
 #assinatura {
 	position: relative;
-	width: 590px;
+	width: 530px;
 	height: 392px;
 	margin-left: 10px;
 	border-radius: 10px;
@@ -35,6 +39,7 @@
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding-left: 40px;
+
 	img {
 		display: flex;
 		position: absolute;
@@ -43,6 +48,7 @@
 		grid-column: 2;
 	}
 }
+
 #buttonParc {
 	display: flex;
 	align-items: center;
@@ -61,11 +67,13 @@
 	text-transform: uppercase;
 	color: $wt;
 	margin-top: 35px;
+
 	&:hover {
 		background-color: $color5;
 		border: $color5;
 	}
 }
+
 #tituloParc {
 	width: 196px;
 	height: 60px;
@@ -75,6 +83,7 @@
 	color: $wt;
 	margin-top: 20px;
 }
+
 #textoParc {
 	width: 181px;
 	height: 48px;
@@ -84,6 +93,7 @@
 	margin-top: 30px;
 	color: $wt;
 }
+
 #gradient {
 	display: flex;
 	padding-left: 40px;
@@ -96,6 +106,7 @@
 	margin-bottom: -19px;
 	border-radius: 0px 0px 20px 20px;
 }
+
 #tituloAssi {
 	margin-top: 10%;
 	font-weight: 700;
@@ -103,9 +114,11 @@
 	line-height: 48px;
 	color: $color2;
 }
+
 #textoAssi {
 	grid-column: 1;
 }
+
 #botaoAssi {
 	display: flex;
 	align-items: center;
@@ -123,11 +136,13 @@
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
 	color: $wt;
+
 	&:hover {
 		background-color: $color5;
 		border: $color5;
 	}
 }
+
 #dotsThree {
 	display: flex;
 	flex: 1;
@@ -135,11 +150,47 @@
 	width: 50%;
 	margin-left: 39%;
 	margin-top: 24px;
-	height: 20px;
+	height: 30px;
 	color: $color3;
 	font-weight: 900;
 	align-items: center;
 }
+
 .circle {
 	margin-left: 16px;
+}
+
+#assinaturaTudo{
+	display: flex;
+	width: auto;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (max-width:1000px) {
+	#parceirosTudo {
+		align-items: center;
+		justify-content: center;
+	}
+
+	#parceiros {
+		height: 370px;
+		width: auto;
+		background-image: url('../Assets/card1.svg') no-repeat;
+		background-size:auto ;
+		background-repeat: no-repeat;
+		flex-direction: column;
+		align-items: left;
+		justify-content: center;
+	}
+
+	#assinatura {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 600px){
+#dogPhoto{
+	display: none;
+}
 }
