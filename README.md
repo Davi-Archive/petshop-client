@@ -11,8 +11,8 @@ Segue abaixo as instruções para a execução do teste.
 
 ### `npm install`
 
--esse é o comando de instalação das dependencias do projeto em sua maquina local.
--após instalado execute o projeto em um servidor de desenvolvimento (Nodejs) como o comando:
+<p>-esse é o comando de instalação das dependencias do projeto em sua maquina local.</p>
+<p>-após instalado execute o projeto em um servidor de desenvolvimento (Nodejs) como o comando:</p>
 
 ### `npm start`
 
