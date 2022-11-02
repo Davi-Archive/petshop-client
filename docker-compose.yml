@@ -1,0 +1,33 @@
+version: "3.8"
+
+services:
+  # Serviço que irá rodar o node
+  app:
+    # Imagem base do container
+    image: node:19
+    # Nome do container para facilitar execução
+    container_name: pet-shop-site
+    # Mesmo que `docker run -t`
+    tty: true
+    build:
+      context: .
+      target: development
+    # Restarta a imagem caso algo a faça parar
+    restart: always
+    # Diretório padrão de execução
+    working_dir: /app
+    # Lista de volumes (diretórios) mapeados de fora para dentro do container
+    volumes:
+      # Monta o diretório atual, com todos os dados do projeto,
+      # dentro do diretório /app
+      - ./src:/app/src
+    ports:
+      - 3000:3000
+
+
+## Lista de redes que os containeres irão utilizar
+#networks:
+  ## Rede padrão, criada automaticamente
+  #default:
+    ## Dá um nome específico à rede padrão
+    # name: network_name
